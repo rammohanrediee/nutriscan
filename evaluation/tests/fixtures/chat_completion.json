@@ -1,0 +1,23 @@
+{
+  "id": "chatcmpl-test",
+  "object": "chat.completion",
+  "created": 1792981800,
+  "model": "Qwen/Qwen3.5-9B",
+  "system_fingerprint": "fixture-v1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"image_status\":\"food\",\"detected_foods\":[{\"name\":\"dal\",\"quantity\":1,\"unit\":\"katori\",\"alternatives\":[\"lentil curry\"]}],\"needs_user_review\":true}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1200,
+    "completion_tokens": 80,
+    "total_tokens": 1280
+  }
+}
+

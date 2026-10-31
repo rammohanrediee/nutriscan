@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nutriscan-evaluation"
+version = "0.1.0"
+description = "Reproducible vision-model evaluation for NutriScan"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "datasets>=3,<5",
+  "httpx>=0.28,<1",
+  "pillow>=11,<13",
+  "pydantic>=2.10,<3",
+]
+
+[project.scripts]
+nutriscan-eval = "nutriscan_eval.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8,<10",
+  "pytest-asyncio>=0.25,<2",
+  "ruff>=0.11,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+

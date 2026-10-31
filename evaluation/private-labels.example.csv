@@ -1,0 +1,5 @@
+filename,expected_foods,benchmark_category,scenario,portion_notes
+home-thali-01.jpg,dal|rice|roti|sabzi,everyday,home|thali|mixed,2 rotis and one small bowl each of dal and sabzi
+restaurant-01.jpg,paneer tikka|mint chutney,protein,restaurant|mixed|occlusion,6 paneer pieces and 2 tablespoons chutney
+unclear-01.jpg,,control,unclear_control|low_light,Too dark to identify reliably
+
