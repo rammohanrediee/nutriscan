@@ -1,0 +1,23 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.scratch/
+.codex/
+
+# Personal agent instructions and learning notes.
+/AGENTS.md
+/GUIDED_BUILD.md
+/docs/LAB_JOURNAL.md
+/docs/SECURITY_LEARNING_MAP.md
+
+# Benchmark data and outputs can contain private meal information.
+evaluation/private/
+evaluation/artifacts/
+
